@@ -112,6 +112,11 @@ body {
     .slider-container {
         width: 85%;
     }
+
+    .prev-btn,
+    .next-btn {
+        top: 40%;
+    }
 }
 
 
