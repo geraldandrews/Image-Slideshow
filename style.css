@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border-radius: 5px;
+}
+
+.slider-header {
+    background: #008000;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: 400;
+    border-radius: 5px 5px 0 0;
+}
+
+.slider {
+    margin: 5px 0;
+}
+
+.image {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.slider img {
+    width: 100%;
+    animation: fade 1s;
+    display: block;
+    margin: auto;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.prev-btn,
+.next-btn {
+   background: rgba(0, 0, 0, 0.7);
+   border: none;
+   outline: none;
+   cursor: pointer;
+   position: absolute;
+   top: 44%;
+   padding: 16px;
+   color: #fff;
+   font-weight: bold;
+   font-size: 2rem;
+   -webkit-tap-highlight-color: transparent;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   transition: 0.2s ease;
+}
+
+.prev-btn {
+    border-radius: 0 5px 5px 0; 
+}
+ 
+.next-btn {
+   right: 0; 
+   border-radius: 5px 0 0 5px;
+}
+
+.caption-container {
+    background: #008000;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: 400; 
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 820px) {
+    .slider-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-container {
+        width: 85%;
+    }
+}
+
+
+ 
+
